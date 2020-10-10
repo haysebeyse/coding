@@ -1,10 +1,16 @@
-# Import required modules
+'''
+Selection Sort Algorithm O(n^2):
+	1. Scan entire list and find the lowest (or highest) number.
+	2. Move this number to the beginning (or end) of a new list to form sorted array.
+
+
+'''
 
 import timeit
 from random import seed
 from random import randint
 
-# Define function which finds lowest value in an array
+# Find index of lowest value
 def findLowestValue(arr):
 	lowest=arr[0]
 	lowestIndex=0
@@ -14,7 +20,7 @@ def findLowestValue(arr):
 			lowestIndex=i
 	return lowestIndex
 
-# Define selection sort function	
+# Form the sorted array based on lowest values
 def sortAscending(arr):
 	sortedArr=[]
 	for _ in range(len(arr)):

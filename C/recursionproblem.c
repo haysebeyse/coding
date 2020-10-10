@@ -13,7 +13,7 @@ int f(int *a, int n) {
 int main() {
 
 	int a[] = {12,7,5};
-	printf("\n%i\n", f(a,3));
+	printf("%i\n", f(a,3));
   
 }
 

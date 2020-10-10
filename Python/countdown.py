@@ -1,3 +1,6 @@
+'''
+Simple recursive function example: Countdown to 0.
+'''
 def countdown(i):
 	print(i)
 	if i<=0:

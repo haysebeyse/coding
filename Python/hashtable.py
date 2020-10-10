@@ -20,10 +20,10 @@ contacts={} #add new hash table
 
 def checkName(name):
 	if contacts.get(name):
-		print("In the list!")
+		print(name + " is already in the list!")
 	else:
 		contacts[name]=True
-		print("Added to the list!")
+		print(name + " has been added to the list!")
 		
 checkName("Erva")
 checkName("Erva")
@@ -42,19 +42,22 @@ graph["alif"]=[]
 
 
 def person_is_seller(name):
-    return name[-1] == 'k'
+    return name[-1] == 'a'
     
 from collections import deque
 search_queue = deque()
 search_queue += graph["you"]
 searched=[]
+print("\nFirst search queue:")
+print(search_queue)
     
 while search_queue:
 	person=search_queue.popleft()
 	if not person in searched:
 		if person_is_seller(person):
-			print(person+" is a apple seller!")
+			print("\n" + person + " is a apple seller!")
 		else:
 			search_queue += graph[person]
 			searched.append(person)
+print("Searched names: ")
 print(searched)

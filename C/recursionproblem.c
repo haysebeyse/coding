@@ -1,3 +1,7 @@
+/*
+Good example to comprehend recursion in C.
+*/
+
 #include <stdio.h>
 
 int f(int *a, int n) {

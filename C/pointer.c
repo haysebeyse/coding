@@ -1,3 +1,7 @@
+/*
+Basic pointer examples
+*/
+
 #include <stdio.h>
 int main()
 {
